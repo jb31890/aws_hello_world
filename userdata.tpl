@@ -6,7 +6,7 @@
 
 # check if docker is installed, install if not
 check_docker(){
-   if [[ $(type docker) ]]; then done; else yum install -y docker; fi
+   if [[ ! $(type docker) ]]; then yum install -y docker; fi
 }
 
 main(){
