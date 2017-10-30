@@ -6,9 +6,7 @@
 
 # check if docker is installed, install, start, and enable if not
 check_docker(){
-   if [[ ! $(type docker) ]]; then yum install -y docker;\ 
-     systemctl enable docker; \
-     systemctl start docker; fi
+   if [[ ! $(type docker) ]]; then yum install -y docker; systemctl enable docker; systemctl start docker; fi
 }
 
 main(){
