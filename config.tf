@@ -46,3 +46,9 @@ variable "volume_size" {
   default = "20"
   description = "sets the volume size to use in the autoscaling group launch config"
 }
+
+variable "demo_key" {
+  type = "string"
+  default = "demo.key"
+  description = "key used for ec2 instances"
+}
